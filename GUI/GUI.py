@@ -246,7 +246,7 @@ def check(jdata):
         #print(flag)
         #print(len(and_or_list))
         for i in range(len(and_or_list)):
-            tmp = rule_list[i].fit(jdata)
+            tmp = rule_list[i+1].fit(jdata)
             if and_or_list[i] == '&':
                 flag = flag and tmp
             else:
